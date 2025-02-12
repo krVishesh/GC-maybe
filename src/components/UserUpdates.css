@@ -1,0 +1,32 @@
+@import "../global.css";
+
+.update-list {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 16px;
+	justify-content: center;
+}
+
+.update-card {
+	border: 1px solid #ccc;
+	border-radius: 8px;
+	padding: 16px;
+	width: 90%;
+	max-width: 400px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	background-color: #f9f9f9;
+	transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.update-card:hover {
+	transform: translateY(-5px);
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.update-card p {
+	margin: 8px 0;
+}
+
+.update-card strong {
+	color: #333;
+}

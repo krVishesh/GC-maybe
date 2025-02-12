@@ -1,0 +1,68 @@
+@import "../global.css";
+
+.dorm-list {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 16px;
+	justify-content: center;
+}
+
+.dorm-card {
+	border: 1px solid #ccc;
+	border-radius: 8px;
+	padding: 16px;
+	width: 90%;
+	max-width: 400px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	background-color: #f9f9f9;
+	transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.dorm-card:hover {
+	transform: translateY(-5px);
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.dorm-card h3 {
+	margin-top: 0;
+	color: #333;
+}
+
+.dorm-card p {
+	margin: 8px 0;
+}
+
+.dorm-card ul {
+	list-style-type: none;
+	padding-left: 0;
+}
+
+.dorm-card ul li {
+	margin-bottom: 8px;
+}
+
+.dorm-card button {
+	margin-right: 8px;
+	padding: 8px 12px;
+	border: none;
+	border-radius: 4px;
+	background-color: #007bff;
+	color: white;
+	cursor: pointer;
+	transition: background-color 0.2s;
+	width: 100%;
+	margin-bottom: 8px;
+}
+
+.dorm-card button:hover {
+	background-color: #0056b3;
+}
+
+.dorm-card input,
+.dorm-card select {
+	margin-bottom: 8px;
+	padding: 8px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	width: calc(100% - 16px);
+}
